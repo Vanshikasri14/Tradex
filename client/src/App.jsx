@@ -18,6 +18,7 @@ const NewsPage = lazy(() => import('./pages/NewsPage'))
 const SettingsPage = lazy(() => import('./pages/SettingsPage'))
 const PaperTradingPage = lazy(() => import('./pages/PaperTradingPage'))
 const TestPage = lazy(() => import('./pages/TestPage'))
+const MindProfilePage = lazy(() => import('./pages/MindProfilePage'))
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -187,6 +188,22 @@ function AnimatedRoutes() {
             >
               <PaperTradingPage />
             </motion.div>
+          } 
+        />
+        <Route 
+          path="/mind-profile" 
+          element={
+            <AuthenticatedLayout>
+              <motion.div
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                variants={dashboardPageVariants}
+                transition={fastTransition}
+              >
+                <MindProfilePage />
+              </motion.div>
+            </AuthenticatedLayout>
           } 
         />
         <Route 
