@@ -1,0 +1,40 @@
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-primary);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scoresSection {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .scoresSection {
+    padding: 1.5rem;
+  }
+}

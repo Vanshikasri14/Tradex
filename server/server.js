@@ -14,6 +14,7 @@ import paperTradingRoutes from './routes/paperTradingRoutes.js'
 import aiInsightsRoutes from './routes/aiInsightsRoutes.js'
 import dashboardRoutes from './routes/dashboardRoutes.js'
 import setupRoutes from './routes/setupRoutes.js'
+import mindProfileRoutes from './routes/mindProfileRoutes.js'
 import { securityHeaders, corsOptions, setCsrfToken } from './middleware/security.js'
 import { validateConfig } from './config/apiConfig.js'
 import sessionCleanupJob from './jobs/sessionCleanup.js'
@@ -57,6 +58,7 @@ app.use('/api/insights', aiInsightsRoutes)
 app.use('/api/prices', priceRoutes)
 app.use('/api/admin', adminRoutes)
 app.use('/api/paper-trading', paperTradingRoutes)
+app.use('/api/mind-profile', mindProfileRoutes)
 
 // Health check
 app.get('/health', (req, res) => {
