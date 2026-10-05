@@ -8,7 +8,8 @@ import {
   MdMenu,
   MdChevronLeft,
   MdTrendingUp,
-  MdAccountBalanceWallet
+  MdAccountBalanceWallet,
+  MdPsychology
 } from 'react-icons/md'
 import styles from './Sidebar.module.css'
 
@@ -29,6 +30,7 @@ function Sidebar({ onCollapse }) {
     { icon: MdAccountBalanceWallet, label: 'Portfolio', path: '/portfolio', description: 'Your holdings' },
     { icon: MdTrendingUp, label: 'Markets', path: '/markets', description: 'Live prices' },
     { icon: MdSchool, label: 'Paper Trading', path: '/paper-trading', description: 'Practice trading' },
+    { icon: MdPsychology, label: 'Mind Profile', path: '/mind-profile', description: 'Trading psychology' },
     { icon: MdNewspaper, label: 'News', path: '/news', badge: 3, description: 'Latest updates' },
   ]
 
