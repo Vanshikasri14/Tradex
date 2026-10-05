@@ -377,5 +377,5 @@ MIT
 
 ## 👤 Author
 
-**Charanjeet Singh**  
-GitHub: [@SinghCharanjeet11](https://github.com/SinghCharanjeet11)
+**Vanshika Srivastava**  
+GitHub: [@Vanshikasri14](https://github.com/Vanshikasri14)
